@@ -1,2 +1,2 @@
-# Hey-Let-s-vote
+# Let's vote
 11101泰山職訓作品-投票系統
