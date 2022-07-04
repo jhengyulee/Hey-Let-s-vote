@@ -1,6 +1,5 @@
-# Let's vote
+# Let's vote 投票系統作業
 11101泰山職訓作品-投票系統
-# 投票系統作業
 
 ## 使用者故事(user story)
 
