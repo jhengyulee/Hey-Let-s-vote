@@ -25,7 +25,7 @@
 * 可以選擇想要了解的項目進行點選
 * 未登入的使用者只可以看到投票的結果
 * 已登入的使用者可以看到投票結果及"我要投票"按鈕
-* 按下我要投票時會顯示投票項目
+* 按下"我要投票"時會顯示投票項目
 * 選擇項目後，按送出，完成投票
 * 完成投票後，跳至投票結果頁
 * 投票結果有一顆按鈕可以返回首頁
@@ -57,11 +57,11 @@
 
 ## 資料表設計
 ### 資料庫名稱:vote
-* members
+* users
     |名稱|型態|預設值|A_I|備註|
     |--|--|--|--|--|
     |id|int(10)|--|true|序號|
-    |member_id|varchar(20)|--|--|帳號|
+    |user_id|varchar(20)|--|--|帳號|
     |password|varchar(20)|--|--|密碼|
     |gender|varchar(2)|--|--|性別|
     |birthday|date|--|--|生日|
@@ -69,21 +69,20 @@
 * admins
     |名稱|型態|預設值|A_I|備註|
     |--|--|--|--|--|
-    |id|int(11)|--|true|序號|
-    |acc|varchar(12)|--|--|帳號|
-    |pw|varchar(16)|--|--|--|
-    |name|varchar(12)|--|--|--|
+    |id|int(10)|--|true|序號|
+    |account|varchar(20)|--|--|帳號|
+    |password|varchar(20)|--|--|--|
+    |name|varchar(20)|--|--|--|
 * subjects
     |名稱|型態|預設值|A_I|備註|
     |--|--|--|--|--|
     |id|int(11)|--|true|序號|
     |subject|varchar(128)|--|--|主題描述|
-    |type_id|int(11)|--|--|--|
     |multiple|boolean(1)|--|--|單/複選|
-    |mulit_limit|tinyint(2)|1|--|單/複選項目數|
-    |start|date|--|--|--|
-    |end|date|--|--|--|
-    |total|int(11)|--|--|--|
+    |multi_limit|tinyint(2)|1|--|單/複選項目數|
+    |start|date|--|--|投票起始日|
+    |end|date|--|--|投票結束日|
+    |total|int(11)|--|--|投票人數7|
 * options
     |名稱|型態|預設值|A_I|備註|
     |--|--|--|--|--|
