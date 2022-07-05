@@ -66,6 +66,7 @@
     |gender|tinyint(1)|--|--|性別|
     |birthday|date|--|--|生日|
     |email|varchar(64)|--|--|電子郵件|
+    
 * admins
     |名稱|型態|預設值|A_I|備註|
     |--|--|--|--|--|
@@ -73,6 +74,7 @@
     |account|varchar(20)|--|--|帳號|
     |password|varchar(20)|--|--|--|
     |name|varchar(20)|--|--|--|
+    
 * subjects
     |名稱|型態|預設值|A_I|備註|
     |--|--|--|--|--|
@@ -82,7 +84,8 @@
     |multi_limit|tinyint(2)|1|--|單/複選項目數|
     |start|date|--|--|投票起始日|
     |end|date|--|--|投票結束日|
-    |total|int(11)|--|--|投票人數|
+    |total|int(11)|--|--|--|
+    
 * options
     |名稱|型態|預設值|A_I|備註|
     |--|--|--|--|--|
@@ -96,12 +99,6 @@
     |--|--|--|--|--|
     |id|int(11)|--|true|序號|
     |user_id|int(11)|--|--|投票者|
-    |sujbect_id|int(11)|--|--|--|
-    |option_id|int(11)|--|--|--|
-    |vote_time|timestamp|--|--|--|
-
-* type
-    |名稱|型態|預設值|A_I|備註|
-    |--|--|--|--|--|
-    |id|int(11)|--|true|序號|
-    |name|varchar(128)|--|--|分類名稱|
+    |sujbect_id|int(11)|--|--|投票主題|
+    |option_id|int(11)|--|--|投票選項|
+    |vote_time|timestamp|--|--|投票時間|
