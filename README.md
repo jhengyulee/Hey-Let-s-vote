@@ -58,7 +58,7 @@
     |--|--|--|--|--|
     |id|int(10)|--|true|序號|
     |user_id|varchar(20)|--|--|帳號|
-    |password|varchar(20)|--|--|密碼|
+    |password|varchar(128)|--|--|密碼|
     |gender|tinyint(1)|--|--|性別|
     |birthday|date|--|--|生日|
     |email|varchar(64)|--|--|電子郵件|
