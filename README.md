@@ -95,6 +95,6 @@
     |--|--|--|--|--|
     |id|int(11)|--|true|序號|
     |user_id|int(11)|--|--|投票者|
-    |sujbect_id|int(11)|--|--|投票主題|
+    |subject_id|int(11)|--|--|投票主題|
     |option_id|int(11)|--|--|投票選項|
     |vote_time|timestamp|--|--|投票時間|
